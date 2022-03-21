@@ -26,7 +26,11 @@
         </div>
         <div>
             <h2>LAB02</h2>
-            <p></p>
+            <p>This lab contains the code for the implementation of the Merge Sort Algorithm. Similar
+                to Lab 01, I had to sort the array of the user's desired size
+                except in this lab, I use merge sort. The program ends when the sorted array is printed
+                where each element is seperated by a semicolon.
+</p>
         </div>
     </section>
 </body>

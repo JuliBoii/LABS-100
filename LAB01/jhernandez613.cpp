@@ -54,5 +54,7 @@ int main() {
     //  Sort the user array with the Insertion-Sort Algorithm
     insertSort(A, size);
 
+    delete[] A;
+
     return 0;
 }

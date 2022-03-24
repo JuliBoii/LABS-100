@@ -93,5 +93,7 @@ int main() {
     //  Prints the final array after mergeSort() is accomplished
     print(A, size);
 
+    delete[] A;
+
     return 0;
 }

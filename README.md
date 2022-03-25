@@ -138,3 +138,58 @@ followed by a semicolon.
 ```
 1;2;3;4;5;6;
 ```
+
+## LAB06
+In LAB06 I had to implement a hash table that handles collisions by chaining. Using either linked list.  
+I had to implement the insert, search, and delete operations. The keys would be integers with the assumption
+that all keys would be non-negative. The first input would be the size `m` of the chained hash table.
+I would have to use the simple hash function `h(k) = k mod m`.  
+Then lines will follow starting with `i`, `s`, `d`, `o`, or `e`.
+
+- `i` followed by a value such as `i2` will insert `2` into the table.
+  - Nothing would be outputted in this case.
+
+- `s` followed by a value such as `s2` will search for `2` in the table.
+  - if there is an element with the key value, then `(key):FOUND_ATi,j;` will be outputted.
+    - if there are various elements with the same key value the first instance will be outputted, not all of them.
+  - otherwise, `(key):NOT_FOUND;` will be outputted.
+
+- `d` followed by a value such as `d2` will delete `2` from the table.
+  - If the delete was successful then `(key):DELETED;` will be outputted.
+    - If there are various elements with the same key value, then the first instance will be deleted, not all of them.
+  - Otherwise, `(key):DELETE_FAILED;` will be outputted.
+
+- `o` will simply output the current state of the entire hash table.
+  - An example would be (if `m = 3`and `3`, `6`, and `1` were inserted):
+  ```
+  0:6->3->;
+  1:1->;
+  2:;
+  ```
+  
+- `e` simply terminates the program.
+
+### Example
+#### Input and Output
+```
+2
+i4
+i2
+i6
+i3
+o
+0:6->2->4->;
+1:3->;
+s2
+2:FOUND_AT0,1;
+s4
+4:FOUND_AT0,2;
+d5
+5:DELETE_FAILED;
+d2
+2:DELETED;
+o
+0:6->4->;
+1:3->;
+e
+```

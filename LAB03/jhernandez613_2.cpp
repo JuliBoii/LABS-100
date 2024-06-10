@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 #include <tuple>
 
 /*
@@ -16,9 +17,9 @@
 
 std::tuple<int, int, int> findMaxCrossSub(const int arr[], int low, int mid, int high) {
     // Lines 20 - 34, find a max subarray of the left half
-    int leftSum = INT_MIN;  //  Initialize the left sum, which holds the greatest sum found so far
+    int leftSum = INT_MIN; //  Initialize the left sum, which holds the greatest sum found so far
     int maxLeft;
-    int sum = 0;    //  Holds the sum entries in arr[i..mid]
+    int sum = 0; //  Holds the sum entries in arr[i..mid]
 
     // starts the index i at mid and works down to low, which is set as (low - 1) inorder for i = low
     for (int i = mid; i > low - 1; i--) {
@@ -34,8 +35,8 @@ std::tuple<int, int, int> findMaxCrossSub(const int arr[], int low, int mid, int
 
     // Lines 37 - 51, find a max subarray of the right half
     int rightSum = INT_MIN; //  Initialize the right sum, which holds the greatest sum found so far
-    int  maxRight;
-    sum = 0;    //  Resets the sum from previous iterations, holds the sum entries in arr[j...high]
+    int maxRight;
+    sum = 0; //  Resets the sum from previous iterations, holds the sum entries in arr[j...high]
 
     // starts the index j at mid + 1, to not account mid that is in the left subarray, and works up to high, which is set as (high + 1) inorder for j = high
     for (int j = mid + 1; j < high + 1; j++) {
@@ -61,13 +62,13 @@ std::tuple<int, int, int> findMaxSub(int A[], int low, int high) {
     std::tuple<int, int, int> crossArr;
 
     //tests for the base case, where the sub has just one element
-    if (high == low){
+    if (high == low) {
         // returns a tuple with the starting and ending indices of jus the one element, along with its value
         return std::make_tuple(low, high, A[low]);
     }
     // line 59-85 handle the recursive case
     else {
-        int mid = (low + high) / 2 ; // divides the array, finding the index mid
+        int mid = (low + high) / 2; // divides the array, finding the index mid
 
         // conquer by recursively finding max subarray within the left and right array
         leftArr = findMaxSub(A, low, mid);

@@ -17,13 +17,16 @@ Labs from my CSE 100 Class for Spring 2022
     - LAB08
 
 ## LAB01
+
 This lab contains the code for implementing the Insertion-Sort Algorithm.  
 I had to take a user's desired array size and create an insert their data manually.  
 Once the elements were entered, we would then sort the array.  
 After each iteration of insertSort(), I had to print the sub-array.  
 
 ### Example
+
 #### Input
+
 ```
 6
 5
@@ -34,6 +37,7 @@ After each iteration of insertSort(), I had to print the sub-array.
 4
 ``` 
 #### Output
+
 ```
 3;5;
 2;3;5;
@@ -44,12 +48,15 @@ After each iteration of insertSort(), I had to print the sub-array.
 
 
 ## LAB02
+
 This lab contains the code for the implementation of the Merge Sort Algorithm.  
 Similar to Lab 01, I had to sort the array of the user's desired size except in this lab, I use merge sort.  
 The program ends when the sorted array is printed.  
 
 ### Example
+
 #### Input
+
 ```
 6
 5
@@ -61,11 +68,13 @@ The program ends when the sorted array is printed.
 ``` 
 
 #### Output
+
 ```
 1;2;3;4;5;6;
 ```
 
 ## LAB03
+
 To compile the code for LAB03 in the terminal you have to use the following:  
 
 ```
@@ -77,7 +86,9 @@ In other words, a subarray of A whose values have the largest sum, **the maximum
 So, in this lab I am not applying a sorting algorithm.
 
 ### Example
+
 #### Input
+
 ```
 6
 -3
@@ -88,18 +99,22 @@ So, in this lab I am not applying a sorting algorithm.
 -5
 ```
 #### Output
+
 ```
 16
 ```
 
 ## LAB04_1
+
 In this lab I had to implement the heap-sort algorithm. Where I would start with an integer number which 
 indicated the number of elements (integers) that had to be sorted. Thereafter, the elements would be
 entered one by one. At the end of the program, the elements were outputted in non-decreasing order with
 each element having a semicolon following it.
 
 ### Example
+
 #### Input
+
 ```
 6
 5
@@ -111,11 +126,13 @@ each element having a semicolon following it.
 ```
 
 #### Output
+
 ```
 1;2;3;4;5;6;
 ```
 
 ## LAB04_2
+
 In this lab I had to implement the randomized quick-sort algorithm. In other words, a random pivot would be
 chosen from the elements in an array when partitioning the sub-array. I would start with an integer which
 indicates the number of elements (integers) that had to be sorted. The elements would be entered one-by-one.
@@ -123,7 +140,9 @@ At the end of the program, the elements were outputted in non-decreasing order w
 followed by a semicolon.
 
 ### Example
+
 #### Input
+
 ```
 6
 5
@@ -135,11 +154,13 @@ followed by a semicolon.
 ```
 
 #### Output
+
 ```
 1;2;3;4;5;6;
 ```
 
 ## LAB06
+
 In LAB06 I had to implement a hash table that handles collisions by chaining. Using either linked list.  
 I had to implement the insert, search, and delete operations. The keys would be integers with the assumption
 that all keys would be non-negative. The first input would be the size `m` of the chained hash table.
@@ -170,7 +191,9 @@ Then lines will follow starting with `i`, `s`, `d`, `o`, or `e`.
 - `e` simply terminates the program.
 
 ### Example
+
 #### Input and Output
+
 ```
 2
 i4
